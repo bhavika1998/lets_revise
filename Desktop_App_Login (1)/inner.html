@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta charset="utf-8" />
+    <title>XP Global - Desktop Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="css/m.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+   
+    <div class="limiter">
+        <div class="container-login100">
+               <div class="desktop_app_menu_wrapper">
+                   <div class="desktop_app_topbar p-t-11 clearfix">
+                    <!-- xp logo-->
+                    <div class="login-top-xplogo float-l m-l-20"><img  src="images/xpGlobalLogo.png" alt="xpGlobalLogo">
+                    </div><!-- xp logo-->
+                    <!-- user strt-->
+                    <div class="float-r m-r-1 m-t-3 desktop_user_login_container">
+                        <div class="float-l m-r-10"><img src="images/img_avatar.png" alt="User Profile Photo" class="user_profile_photo"></div>
+                        <div class="float-l"><p>Hi, <span class="username m-l-3 m-r-3">Joh Deo</span> | <a href="#" class="m-r-5">Logout</a></p></div>
+                    </div>
+                    <!-- user end -->
+                   </div>
+                   <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">View All Assignment</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Add Assignment</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">delete</button>
+                    </div>
+                  
+                  <div id="Paris" class="tabcontent">
+                    <div class="link">
+                      <span class="heading">Name</span>
+                      <input type="text" class="input-content" name="assignmentName" placeholder="Assignment Name">
+                    </div>
+                    <div class="link">
+                    <span class="heading">Add the link of Reference Video</span>
+                    <input type="text" data-role="input" data-prepend="User name: ">
+                    <input type="url" class="input-content" name="vdoUrl" placeholder="Video URL">
+                  </div>
+                  <div class="link">
+                    <span class="heading">Add the link of Assignment</span>
+                    <input type="url" class="input-content" name="pdfUrl" placeholder="PDF File">
+                  </div>
+                  <div class="link">
+                    <span class="heading">Add Description about Assignment</span>
+                    <input type="text" class="input-description" name="description" placeholder="Brief Description About The assignment">
+                  </div>
+                  <div class="link">
+                    <span class="heading">Add Test Questions</span>
+                    <input type="text" class="float-l input-question " name="testQue" placeholder="Question">
+                    <a class="addQue " href=#></a><img class="m-t-5 float-r"src="images/plus.png" style="height: 35px; width: 35px"></a>
+                  </div>
+                </div>
+                  
+                  <div id="London" class="tabcontent">
+                    <table class="table striped row-hover sortable-column">
+                      <thead>
+                      <tr>
+                          <th>#</th>
+                          <th class="sortable-column">First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                      </tr>
+                      </thead>
+                      <tbody class="sortable-column">
+                      <tr>
+                          <td>1</td>
+                          <td>Bill</td>
+                          <td>Gates</td>
+                          <td>@billy</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Steve</td>
+                          <td>Jobs</td>
+                          <td>@stevy</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>Page</td>
+                          <td>@larry</td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  </div>
+                  
+                  <div id="Tokyo" class="tabcontent">
+                    <video data-role="video" data-src="https://metroui.org.ua/res/oceans.mp4"></video>
+                    </div>
+                  
+                  
+               </div>
+        </div>
+    </div>
+    <script>if (typeof module === 'object'){window.module = module; module = undefined;} </script>  
+     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>

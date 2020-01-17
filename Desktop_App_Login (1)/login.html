@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <title>XP Global - Desktop Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+   
+    <div class="limiter">
+        <div class="container-login100">
+               <div class="wrap-login100">
+                <div class="login-top-bar clearfix">
+                    <div class="login-top-bar-arrow float-l"><img  src="images/top-login-arrow.svg" alt="icon"></div>
+                    <div class="login-top-title float-l">Login</div>
+                    <div class="login-top-xplogo float-r m-r-17"><img  src="" alt="LetsReviseLogo"></div>
+
+
+                </div>   
+
+               <div class="p-t-25 p-b-30 login-inner-wrapper">
+                <form class="login100-form" method="POST">
+                   
+                    <div class="wrap-input100 m-b-16">
+                        <input class="input100" id='UserEmail' type="text"  name="username" id="UserEmail" placeholder="Username">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <span class="lnr lnr-user"></span>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 m-b-16" data-validate="Password is required">
+                        <input class="input100" id='UserPassword' type="password" id="UserPassword" name="pass" placeholder="Password">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <span class="lnr lnr-lock"></span>
+                        </span>
+                    </div>
+                    <div class="container-login100-form-btn p-t-15">
+						<button class="login100-form-btn" id='btnSignIn'>
+							Login
+						</button>
+					</div>
+                    <div class="text-center w-full p-t-15">
+						<a class="txt1 bo1 hov1" href="#">
+							Forget Password?
+						</a>
+                    </div>
+                    <div class="text-center w-full p-t-10">
+						<span class="errormsg" id='userMessage'>
+							
+                        </span>
+                        
+                    </div>
+                    <span id="appDiv"> </span>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>if (typeof module === 'object'){window.module = module; module = undefined;} </script>  
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="Scripts/Services/AuthenticationService.js"></script>
+    <script src="Scripts/Shared/Config.js"></script>
+    <!-- <script src="Scripts/Shared/TBACommon.js"></script>
+    <script src="Scripts/Services/CookieManager.js"></script> -->
+    <script src="Scripts/ExternalLibraries/md5.js"></script>
+    <script src="Scripts/ExternalLibraries/sha512.min.js"></script>
+    <script src="Scripts/PageScripts/loginPageScript.js"></script>
+    
+   
+    
+    <script>if (window.module) module = window.module;</script>
+
+
+</body>
+</html>
